@@ -1,0 +1,1 @@
+export default function Contact(){return <section className="section"><div className="container" style={{maxWidth:750}}><div className="eyebrow">CONTACT</div><h1 style={{fontSize:55}}>خلينا نتكلم.</h1><p style={{fontSize:19,lineHeight:2,color:"var(--muted)"}}>للاستفسارات والمشروعات والشراكات، تواصل معنا عبر WhatsApp أو البريد الإلكتروني.</p></div></section>}

@@ -1,0 +1,1 @@
+export default function Privacy(){return <section className="section"><div className="container" style={{maxWidth:750}}><h1>سياسة الخصوصية</h1><p style={{lineHeight:2,color:"var(--muted)"}}>نحترم خصوصيتك ونستخدم البيانات فقط لتقديم وتحسين خدمات SwiftWarm. سيتم توسيع هذه السياسة مع إطلاق الحسابات والطلبات والميزات الشخصية.</p></div></section>}

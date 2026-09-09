@@ -1,0 +1,1 @@
+export default function Terms(){return <section className="section"><div className="container" style={{maxWidth:750}}><h1>الشروط والأحكام</h1><p style={{lineHeight:2,color:"var(--muted)"}}>استخدام المنصة يعني موافقتك على الشروط المعروضة. سيتم تحديث الشروط الخاصة بالمنتجات والخدمات والحسابات مع كل مرحلة.</p></div></section>}

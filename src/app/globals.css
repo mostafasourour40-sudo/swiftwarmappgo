@@ -1,1 +1,57 @@
 @tailwind base;@tailwind components;@tailwind utilities;:root{--bg:#f8faf9;--surface:#fff;--text:#20272a;--muted:#6b7478;--line:#e3e8e7;--accent:#10b9b3;--dark:#087f7c}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,sans-serif}a{text-decoration:none;color:inherit}.container{width:min(1180px,calc(100% - 32px));margin:auto}.section{padding:88px 0}.display{font-size:clamp(2.7rem,7vw,5.8rem);line-height:.98;letter-spacing:-.05em;font-weight:800}.eyebrow{color:var(--dark);font-size:.8rem;font-weight:800;letter-spacing:.08em}.card{background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:28px;transition:.2s}.card:hover{transform:translateY(-4px);box-shadow:0 18px 45px #19373712}
+
+/* Responsive layout */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #ffffffee;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+.header-inner {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.site-brand { font-weight: 900; font-size: 22px; white-space: nowrap; }
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.header-cta {
+  background: var(--accent);
+  color: #fff;
+  padding: 13px 20px;
+  border-radius: 999px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+@media (max-width: 900px) {
+  .header-inner { flex-wrap: wrap; padding-top: 14px; padding-bottom: 14px; gap: 12px; }
+  .header-nav {
+    order: 3;
+    width: 100%;
+    overflow-x: auto;
+    padding: 8px 0 4px;
+    gap: 20px;
+    white-space: nowrap;
+    scrollbar-width: thin;
+  }
+  .header-cta { margin-inline-start: auto; }
+  .section { padding: 58px 0; }
+}
+@media (max-width: 640px) {
+  .display { font-size: clamp(2.5rem, 13vw, 4rem); }
+  .section .container > div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+  }
+  .section h1 { font-size: clamp(2.3rem, 10vw, 3.6rem) !important; }
+  .section h2 { font-size: clamp(1.5rem, 7vw, 2.3rem); }
+  .card { padding: 22px; }
+}
